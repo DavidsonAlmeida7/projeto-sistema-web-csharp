@@ -53,7 +53,7 @@ namespace ProjetoSistemaWeb.Migrations
                         column: x => x.DepartmentId,
                         principalTable: "Department",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
 
@@ -76,7 +76,7 @@ namespace ProjetoSistemaWeb.Migrations
                         column: x => x.SellerId,
                         principalTable: "Seller",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
 
@@ -96,10 +96,10 @@ namespace ProjetoSistemaWeb.Migrations
                 columns: new[] { "Id", "Name" },
                 values: new object[,]
                 {
-                                { 1, "Computadores" },
-                                { 2, "Eletrônicos" },
-                                { 3, "Moda" },
-                                { 4, "Livros" }
+                    { 1, "Computadores" },
+                    { 2, "Eletrônicos" },
+                    { 3, "Moda" },
+                    { 4, "Livros" }
                 }
             );
 
@@ -133,25 +133,25 @@ namespace ProjetoSistemaWeb.Migrations
                     { 9, new DateTime(2018, 09, 14), 11000.0, Pending, 6 },
                     { 10, new DateTime(2018, 09, 7), 9000.0, Billed, 6 },
                     { 11, new DateTime(2018, 09, 13), 6000.0, Billed, 2 },
-                    { 12, new DateTime(2018, 09, 25), 7000.0, Pending, 3 },
-                    { 13, new DateTime(2018, 09, 29), 10000.0, Billed, 4 },
-                    { 14, new DateTime(2018, 09, 4), 3000.0, Billed, 5 },
-                    { 15, new DateTime(2018, 09, 12), 4000.0, Billed, 1 },
-                    { 16, new DateTime(2018, 10, 5), 2000.0, Billed, 4 },
-                    { 17, new DateTime(2018, 10, 1), 12000.0, Billed, 1 },
-                    { 18, new DateTime(2018, 10, 24), 6000.0, Billed, 3 },
-                    { 19, new DateTime(2018, 10, 22), 8000.0, Billed, 5 },
-                    { 20, new DateTime(2018, 10, 15), 8000.0, Billed, 6 },
-                    { 21, new DateTime(2018, 10, 17), 9000.0, Billed, 2 },
-                    { 22, new DateTime(2018, 10, 24), 4000.0, Billed, 4 },
-                    { 23, new DateTime(2018, 10, 19), 11000.0, Canceled, 2 },
-                    { 24, new DateTime(2018, 10, 12), 8000.0, Billed, 5 },
-                    { 25, new DateTime(2018, 10, 31), 7000.0, Billed, 3 },
-                    { 26, new DateTime(2018, 10, 6), 5000.0, Billed, 4 },
-                    { 27, new DateTime(2018, 10, 13), 9000.0, Pending, 1},
-                    { 28, new DateTime(2018, 10, 7), 4000.0, Billed, 3 },
-                    { 29, new DateTime(2018, 10, 23), 12000.0, Billed, 5 },
-                    { 30, new DateTime(2018, 10, 12), 5000.0, Billed, 2 }
+                    { 12, new DateTime(2019, 09, 25), 7000.0, Pending, 3 },
+                    { 13, new DateTime(2019, 09, 29), 10000.0, Billed, 4 },
+                    { 14, new DateTime(2019, 09, 4), 3000.0, Billed, 5 },
+                    { 15, new DateTime(2019, 09, 12), 4000.0, Billed, 1 },
+                    { 16, new DateTime(2019, 10, 5), 2000.0, Billed, 4 },
+                    { 17, new DateTime(2019, 10, 1), 12000.0, Billed, 1 },
+                    { 18, new DateTime(2019, 10, 24), 6000.0, Billed, 3 },
+                    { 19, new DateTime(2019, 10, 22), 8000.0, Billed, 5 },
+                    { 20, new DateTime(2019, 10, 15), 8000.0, Billed, 6 },
+                    { 21, new DateTime(2019, 10, 17), 9000.0, Billed, 2 },
+                    { 22, new DateTime(2021, 10, 24), 4000.0, Billed, 4 },
+                    { 23, new DateTime(2021, 10, 19), 11000.0, Canceled, 2 },
+                    { 24, new DateTime(2021, 10, 12), 8000.0, Billed, 5 },
+                    { 25, new DateTime(2021, 10, 31), 7000.0, Billed, 3 },
+                    { 26, new DateTime(2021, 10, 6), 5000.0, Billed, 4 },
+                    { 27, new DateTime(2022, 01, 13), 9000.0, Pending, 1},
+                    { 28, new DateTime(2022, 03, 7), 4000.0, Billed, 3 },
+                    { 29, new DateTime(2022, 05, 23), 12000.0, Billed, 5 },
+                    { 30, new DateTime(2022, 06, 12), 5000.0, Billed, 2 }
                 }
             );
         }
